@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --rojoPrincipal: #CB341D;
     --grisClaro: #D9D9D9;
@@ -82,4 +87,36 @@ body {
 
 .contenedor-formulario button:hover{
     background-color: #8B0000;
+}
+
+/* Eestilos para el Dashboard*/
+
+/*Estilos del encabezado */
+
+header {
+    background-color: var(--grisOscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.encabezado-logo {
+    display: flex;
+    align-items: center;
+}
+
+.boton-menu {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px; var(--grisOscuro);
+
+    i {
+      font-size: 2rem;
+    }
 }
