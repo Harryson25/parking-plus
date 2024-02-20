@@ -28,18 +28,31 @@
             <p style="text-align: center; color: var (--grisOscuro);" al sistema</p>
             <form>
                 <label style="font-weight: bold;">Usuario</label>
-                <input type="text" />
+                <input type="text" id="usuario" />
 
                 <label style="font-weight: bold;">Clave</label>
-                <input type="password" />
+                <input type="password" id="clave" />
 
-                <button>Ingresar</button>
+                <button onclick="ingresarAlSistema()">Ingresar</button>
             </form>
         </div>
         <p>&copy;Juan Astaiza - Systemplus Popayán</p>
     </div>
 
+    <script>
+        
+        function ingresarAlSistema() {
+        const inputUsuario = document.getElementById("usuario");
+        const inputClave = document.getElementById("clave");
 
-</body>
-
+        if(inputUsuario.value == "andres" && inputClave.value == 123456) {
+            alert("Puedes ingresar al sistema");
+        }    else {
+        alert("No estás autorizado a ingresar");
+        }
+     }
+        
+    </script>
+  </body>
 </html>
+
