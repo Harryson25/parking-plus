@@ -105,6 +105,27 @@ header {
     display: flex;
     align-items: center;
 }
+.cuadricula {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    h3 {
+        margin-top: 10px;
+    }
+}
 
 .boton-menu {
     background-color: white;
@@ -115,6 +136,13 @@ header {
     align-items: center;
     border-radius: 15px;
     box-shadow: 4px 4px 10px; var(--grisOscuro);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        background-color: var(--rojoPrincipal);
+        color: white;
+    }
 
     i {
       font-size: 2rem;
