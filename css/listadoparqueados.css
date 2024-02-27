@@ -1,0 +1,16 @@
+.contenedor-listado-parqueados {
+    background-color: white;
+    width: 90%;
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.tabla {
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid var(--grisOscuro);
+    padding: 8px;
+    text-align: left;
+}
