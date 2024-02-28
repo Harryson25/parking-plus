@@ -3,6 +3,7 @@
     width: 90%;
     padding: 2rem;
     overflow-x: auto;
+    border-radius: 15px;
 }
 
 .tabla {

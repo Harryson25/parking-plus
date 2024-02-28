@@ -28,6 +28,7 @@ input, select {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid var(--grisOscuro);
+    text-transform: uppercase;
 
     &:focus {
         border: 1px solid var(--rojoPrincipal);
